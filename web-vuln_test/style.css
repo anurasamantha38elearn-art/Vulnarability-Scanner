@@ -1,0 +1,319 @@
+/* CODEXIO Vulnerability Scanner - Enhanced Styling */
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(33, 37, 41, 0.95) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Input and Button Styling */
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    transform: translateY(-2px);
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-success {
+    background: linear-gradient(45deg, #28a745, #20c997);
+    border: none;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    border: none;
+}
+
+/* Process and Vulnerability Areas */
+.process-area, .vuln-area {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    border: none;
+    padding: 25px;
+    height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.process-area:hover, .vuln-area:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.process-area {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.vuln-area {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+}
+
+/* Scan Summary Styling */
+.scan-summary {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 4px solid #28a745;
+}
+
+.scan-summary h6 {
+    color: #28a745;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.scan-summary li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.scan-summary li:last-child {
+    border-bottom: none;
+}
+
+.scan-summary strong {
+    color: #495057;
+    font-weight: 600;
+}
+
+/* Vulnerability Items */
+.vulnerability-list {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.vuln-item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    border: none !important;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 4px solid #dc3545 !important;
+}
+
+.vuln-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.vuln-item h6 {
+    color: #dc3545;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.vuln-item p {
+    margin-bottom: 10px;
+    color: #495057;
+    font-size: 14px;
+}
+
+.vuln-item strong {
+    color: #212529;
+    font-weight: 600;
+}
+
+/* AI Analysis Section */
+.ai-analysis {
+    background: rgba(13, 110, 253, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    border-left: 3px solid #0d6efd;
+}
+
+.ai-analysis h6 {
+    color: #0d6efd;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ai-content {
+    color: #495057;
+    font-size: 13px;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+/* Print Button */
+.print-btn {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.print-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #0056b3, #520dc2);
+}
+
+.print-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Loading Spinner */
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    color: #007bff;
+}
+
+/* Text Colors */
+.text-bg-light {
+    background: rgba(255, 255, 255, 0.95) !important;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.fixed-bottom {
+    background: rgba(33, 37, 41, 0.9);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 0;
+}
+
+.fixed-bottom a {
+    color: #007bff !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.fixed-bottom a:hover {
+    color: #0056b3 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .process-area, .vuln-area {
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .form-control {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+/* Custom Scrollbar */
+.process-area::-webkit-scrollbar,
+.vuln-area::-webkit-scrollbar,
+.vulnerability-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.process-area::-webkit-scrollbar-track,
+.vuln-area::-webkit-scrollbar-track,
+.vulnerability-list::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.process-area::-webkit-scrollbar-thumb,
+.vuln-area::-webkit-scrollbar-thumb,
+.vulnerability-list::-webkit-scrollbar-thumb {
+    background: rgba(0, 123, 255, 0.5);
+    border-radius: 4px;
+}
+
+.process-area::-webkit-scrollbar-thumb:hover,
+.vuln-area::-webkit-scrollbar-thumb:hover,
+.vulnerability-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 123, 255, 0.7);
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in-left {
+    animation: slideInLeft 0.5s ease-out;
+}
+
+@keyframes slideInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
